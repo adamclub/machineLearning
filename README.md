@@ -1,4 +1,15 @@
-##  内容
+21 天入门机器学习-第02期
+微软高级工程师带队，小白入行 AI 的必修课。
+李烨 · 微软高级软件工程师
+42课/限时 ¥149
+
+Class address:
+https://gitbook.cn/gitchat/column/5bf3c823fae086212ccb1266
+
+This repository is forked from:
+https://github.com/fxma/machineLearning
+I added requirements.txt and examples on it.
+
 ### 机器学习练习
 1. 线性回归
 2. 朴素贝叶斯分类器
@@ -18,6 +29,4 @@
 2. 简历过滤器
 3. 电影评分器
 
-##  运行
-对于有main方法的py文件，需要改成无main方法的文件<br>
-对于无main方法的py文件，可以直接运行，可能需要import某些包
+

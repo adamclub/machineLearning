@@ -38,21 +38,28 @@ scores = data["Score"].values
 X_train = X[:11]
 X_test = X[11:]
 
-# Logistic Regression – Binary Classification
-passed = []
+
+# Logistic Regression - Multiple Classification
+level = []
 
 for i in range(len(scores)):
-    if(scores[i] >= 60):
-        passed.append(1)
+    if(scores[i] >= 85):
+        level.append(2)
+    elif(scores[i] >= 60):
+        level.append(1)
     else:
-        passed.append(0)
+        level.append(0)
+#    print('score:[' , i , '] ', scores[i], ' level:', level[i])
 
-y_train = passed[:11]
-y_test = passed[11:]
+#print ('level: ', level)
 
-#why C=1e5? α?
-classifier = LogisticRegression(C=1e5)
+y_train = level[:11]
+y_test = level[11:]
+
+classifier = LogisticRegression(C=1.e5)
+classifier.solver = 'liblinear'
 classifier.fit(X_train, y_train)
 
 y_predict = classifier.predict(X_test)
-print(y_predict)
+#print('X_test: ', X_test)
+print('y_predict: ',y_predict)

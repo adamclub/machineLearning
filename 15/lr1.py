@@ -41,3 +41,6 @@ regr.fit(X_train, y_train)
 y_predict = regr.predict(X_test)
 
 print(y_predict)
+for i in y_predict:
+  print (format(i,"0.2f"))
+

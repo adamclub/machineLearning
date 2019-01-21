@@ -28,6 +28,7 @@ for i in range(len(scores)):
 y_train = passed[:11]
 y_test = passed[11:]
 
+#why C=1e5? α?
 classifier = LogisticRegression(C=1e5)
 classifier.fit(X_train, y_train)
 

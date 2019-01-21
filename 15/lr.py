@@ -2,6 +2,8 @@
 #21 天入门机器学习-第02期
 #第15课：逻辑回归——用来做分类的回归模型
 #示例代码
+#例子，比如某位老师想用学生上学期考试的成绩（Last Score）和本学期在学习上花费的时间（Hours Spent）来预期本学期的成绩
+
 from sklearn.linear_model import LogisticRegression
 from sklearn.linear_model import LinearRegression
 import pandas as pd
